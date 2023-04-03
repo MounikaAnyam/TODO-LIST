@@ -2,68 +2,50 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f5f5f5;
-    color: #444;
-    font-family: 'Courier New', sans-serif;
+    background-color: blue;
+    background-image: linear-gradient(315deg,#dfb2b2 10%,#bacfee 90%);
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-
-h1{
-    color: rgb(179,131,226);
-    font-size: 10rem;
-    text-align: center;
-    opacity: 0.5;
-}
-form{
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 400px;
-    max-width: 100%;
-}
-input{
-    border: none;
-    color: #444;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    display: block;
-    width: 100%;
-    
-}
-input::placeholder{
-    color: #d5d5d5;
-}
-input:focus{
-    outline-color: rgb(179,131,226);
-}
-
-.todos{
+.quiz-container{
     background-color: #fff;
-    padding: 0;
-    margin:0;
+    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+    width: 600px;
+    overflow: hidden;
+}
+
+h2{
+    padding: 1rem;
+    align-items: center;
+    margin: 0;
+
+}
+ul{
     list-style-type: none;
-
+    margin: 0;
 }
-.todos li{
-    border-top:1px dotted#e5e5e5;
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+ul li label{
     cursor: pointer;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
 }
-.todos li.completed{
-    color: #b6b6b6;
-    text-decoration: line-through;
-
-
+button{
+    background-color: pink;
+    color: black;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 1.3rem;
 }
-small{
-    color: #b5b5b5;
-    padding: 5rem 4rem 8rem;
-    text-align:center;
-    font-size: 1.5rem;
+button:hover{
+    background-color: rgb(254,149,166);
 }
-
-    
+button:focus{
+    background-color: rgb(259,192,255);
+}
